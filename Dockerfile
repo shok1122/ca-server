@@ -12,5 +12,5 @@ EXPOSE 80
 
 VOLUME $CATOP
 
-ENTRYPOINT /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["help"]
