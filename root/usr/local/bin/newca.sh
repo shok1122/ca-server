@@ -1,7 +1,6 @@
 CAKEY="cakey.pem1"
 CAREQ="careq.pem"
 CACERT="cacert.pem"
-CATOP="./demoCA"
 CADAYS="36500"
 
 # if explicitly asked for or it doesn't exist then setup the directory
