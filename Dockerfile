@@ -2,6 +2,7 @@ FROM nginx:alpine
 
 ENV CATOP /RootCA
 ENV CADAYS 36500
+ENV DAYS 3650
 
 RUN apk update \
 	&& apk add openssl \

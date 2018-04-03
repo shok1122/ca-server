@@ -41,7 +41,7 @@ case $1 in
 		openssl req -new -key /tmp/client.key -out /tmp/client.csr
 		[ 0 -ne $? ] && exit 1
 		echo "generate certificate..."
-		openssl ca -in /tmp/client.csr -out /tmp/client.crt -days 3650
+		openssl ca -in /tmp/client.csr -out /tmp/client.crt -days $DAYS
 		[ 0 -ne $? ] && exit 1
 		NAME="$(openssl x509 -subject -in /tmp/client.crt | sed -n '/^subject/s/^.*CN=//p')"
 		[ "" -ne $NAME ] && exit 1
