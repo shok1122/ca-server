@@ -1,6 +1,7 @@
 FROM nginx:alpine
 
 ENV CATOP /RootCA
+ENV CADAYS 36500
 
 RUN apk update \
 	&& apk add openssl \
